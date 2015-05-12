@@ -1,0 +1,435 @@
+html {
+	margin: auto;
+}
+body {
+	background: rgb(0, 143, 125); margin: auto; width: 1200px; font-family: Arial, sans-serif;
+}
+div {
+	
+}
+#pagetop {
+	background: rgb(0, 143, 125); padding: 0px 0px 0px 20px; position: relative;
+}
+#pagetitle {
+	background: yellow; margin: 0px; padding: 0px 50px; top: 0px; text-align: center; right: 0px; position: absolute;
+}
+.mainmenu {
+	background: black; color: white;
+}
+.mainmenu ul {
+	list-style: none; margin: 0px; padding: 10px 0px 30px 70px; font-size: 18px; z-index: 20;
+}
+.TALLmenu ul {
+	padding-bottom: 80px;
+}
+.mainmenu ul li {
+	list-style: none; margin: 0px; padding: 0px; z-index: 20;
+}
+.mainmenu ul li {
+	background: black; border-right-color: white; border-right-width: 2px; border-right-style: solid; float: left; z-index: 20;
+}
+#nobar {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.mainmenu ul li:hover {
+	background: teal; position: relative; z-index: 20;
+}
+#nohover {
+	background: black; padding: 0px 10px;
+}
+.mainmenu ul li a {
+	margin: 0px; padding: 5px 15px; color: white; text-decoration: none; display: inline; z-index: 20;
+}
+#me {
+	color: yellow;
+}
+#nolink {
+	background: black; margin: 0px; padding: 5px 15px; color: white;
+}
+.mainmenu ul li ul {
+	margin: 0px; padding: 0px; display: none; position: absolute; z-index: 20;
+}
+.mainmenu ul li:hover ul {
+	left: 0px; top: 20px; display: block; z-index: 20;
+}
+.mainmenu ul li ul li {
+	background: black; padding: 7px 0px; border: 0px currentColor; border-image: none; float: none; z-index: 20;
+}
+.wide100 {
+	width: 100px;
+}
+.wide150 {
+	width: 150px;
+}
+.wide250 {
+	width: 250px;
+}
+.mainmenu ul li:hover ul li:hover {
+	background: teal;
+}
+.mainmenu ul li ul li a {
+	color: white; display: inline; z-index: 20;
+}
+.mainmenu ul li:hover ul li ul {
+	display: none; position: absolute; z-index: 20;
+}
+.mainmenu ul li:hover ul li:hover ul {
+	left: 150px; top: 0px; display: block; z-index: 20;
+}
+.mainmenu ul li:hover ul li:hover ul li {
+	background: black; z-index: 20;
+}
+.mainmenu ul li:hover ul li:hover ul li:hover {
+	background: teal;
+}
+.mainmenu ul li:hover ul li:hover ul li a {
+	color: white; z-index: 20;
+}
+.clear {
+	clear: both;
+}
+.pagecontent {
+	background: url("../images/gradient-white.jpg") repeat-x white; color: black; position: relative;
+}
+.intheframe {
+	background: rgb(172, 214, 212);
+}
+.intheframe img {
+	width: 250px; height: 250px; margin-right: 10px; float: left;
+}
+.pagecontentHOME {
+	background: url("../images/gradient-black.jpg") repeat-x black; color: white; position: relative;
+}
+#leavesleft {
+	left: 0px; bottom: 0px; position: absolute; z-index: 0; opacity: 0.5;
+}
+#leavesright {
+	right: 0px; bottom: 0px; position: absolute; z-index: 0; opacity: 0.5;
+}
+#leavestop {
+	left: 0px; bottom: -200px; position: absolute; z-index: 1; opacity: 1;
+}
+#leavesbottom {
+	right: 0px; bottom: 31px; position: absolute; z-index: 1; opacity: 1;
+}
+#contenttop {
+	text-align: center; position: relative;
+}
+#contenttop ul {
+	margin: 0px;
+}
+#picturewindow {
+	border: 10px solid white; border-image: none; top: -50px; width: 750px; height: 250px; text-align: left; padding-right: 10px; position: relative; background-color: rgb(172, 214, 212);
+}
+#picturewindowHOME {
+	border: 10px solid white; border-image: none; top: -60px; width: 800px; height: 350px; position: relative; background-color: rgb(165, 255, 225);
+}
+#slidewindow {
+	width: 1150px; height: 500px; position: relative; XXborder: solid 10px teal; XXbackground-color: #A5FFE1;
+}
+#sidemenu {
+	top: 10px; width: 180px; position: absolute; z-index: 10;
+}
+#sidemenu td {
+	padding: 0px 0px 15px 10px; top: 10px; text-align: left; position: relative;
+}
+#midmenu td {
+	padding: 0px 0px 15px 10px; top: 10px; text-align: left; position: relative;
+}
+#sidemenu a {
+	color: rgb(165, 255, 225); text-decoration: none;
+}
+#midmenu a {
+	color: rgb(165, 255, 225); text-decoration: none;
+}
+#sidemenu a {
+	color: rgb(165, 255, 225); text-decoration: none;
+}
+#midmenu a {
+	color: rgb(165, 255, 225); text-decoration: none;
+}
+#TPsidemenu a {
+	color: teal; text-decoration: none;
+}
+#middleleft a {
+	color: teal; text-decoration: none;
+}
+#sidemenu a:hover {
+	background: rgb(102, 179, 179); color: white;
+}
+#TPsidemenu a:hover {
+	background: rgb(102, 179, 179); color: white;
+}
+#midmenu a:hover {
+	background: rgb(102, 179, 179); color: white;
+}
+#middleleft a:hover {
+	background: rgb(102, 179, 179); color: white;
+}
+#rotBwd {
+	left: 10px; bottom: 10px; position: absolute;
+}
+#rotUnpause {
+	left: 390px; bottom: 10px; visibility: hidden; position: absolute;
+}
+#rotPause {
+	left: 390px; bottom: 10px; visibility: visible; position: absolute;
+}
+#slideBwd {
+	top: 90px; right: 400px; position: absolute;
+}
+#slideUnpause {
+	top: 90px; right: 350px; visibility: hidden; position: absolute;
+}
+#slidePause {
+	top: 90px; right: 350px; visibility: visible; position: absolute;
+}
+#homemiddle {
+	top: -40px; height: 200px; position: relative;
+}
+#hometextleft {
+	padding: 0px 30px 0px 0px; left: 150px; width: 370px; position: absolute;
+}
+#middleleft {
+	padding: 0px 30px 0px 0px; left: 190px; width: 330px; position: absolute;
+}
+#hometextleft li {
+	list-style: url("../images/yellow-star.gif"); padding: 0px;
+}
+#hometextleft a {
+	color: white; text-decoration: none;
+}
+#hometextright {
+	margin: 0px; padding: 0px 0px 0px 30px; left: 550px; width: 500px; position: absolute;
+}
+#middleright {
+	margin: 0px; padding: 0px 0px 0px 30px; left: 550px; width: 500px; position: absolute;
+}
+#hometextright h2 {
+	margin: 0px; color: yellow; font-family: Arial, sans-serif;
+}
+#homemiddle h2 {
+	margin: 0px; color: yellow; font-family: Arial, sans-serif;
+}
+#homemiddle h3 {
+	margin: 0px 0px 0px -35px;
+}
+#hometextright td {
+	vertical-align: top;
+}
+.edge {
+	height: 80px;
+}
+.side {
+	height: 100px;
+}
+.centered {
+	height: 120px;
+}
+#homebottom {
+	height: 300px; position: relative;
+}
+#homebottom h2 {
+	margin: 0px; text-align: center; color: yellow; font-family: Arial, sans-serif;
+}
+#homebottom table {
+	margin: auto;
+}
+#homebottom td a {
+	text-decoration: none;
+}
+#homebottom a {
+	margin: 0px; padding: 5px 15px; color: white; text-decoration: none;
+}
+#homebottom a:hover {
+	background: teal; position: relative;
+}
+#projectsdiv a {
+	padding: 0px;
+}
+#projectpictures img {
+	z-index: 10;
+}
+.textcontent {
+	background: rgb(0, 143, 125); padding: 15px; color: black; position: relative;
+}
+.textcontent a {
+	z-index: 25;
+}
+#TP1menu {
+	top: 10px; width: 180px; position: absolute; z-index: 10;
+}
+#TP1menu td {
+	padding: 0px 0px 15px 10px; text-align: left;
+}
+#TP1menu a {
+	color: rgb(163, 215, 208); text-decoration: none; z-index: 20;
+}
+#midmenu a {
+	color: rgb(163, 215, 208); text-decoration: none; z-index: 20;
+}
+#TP1menu a:hover {
+	background: rgb(102, 179, 179); color: white;
+}
+#midmenu a:hover {
+	background: rgb(102, 179, 179); color: white;
+}
+#toprow {
+	background: url("../images/bar-shaded-right.jpg") repeat-y white; margin: -15px 0px 0px -15px; width: 1200px; float: left; position: relative;
+}
+#top-left {
+	background: white; padding: 10px 10px 10px 20px; width: 300px; float: left; z-index: 15;
+}
+#top-left a {
+	z-index: 25;
+}
+#top-center {
+	background: white; padding: 10px 0px 10px 25px; width: 390px; float: left; z-index: 15;
+}
+#top-center a {
+	z-index: 25;
+}
+#top-right {
+	background: rgb(172, 214, 212); margin: 0px 0px 0px 75px; padding: 10px 15px; width: 349px; float: left; z-index: 15;
+}
+#bottomrow {
+	background: url("../images/bar-shaded-left.jpg") repeat-y white; margin: -140px 0px 0px -15px; width: 1200px; clear: both; border-top-color: rgb(0, 143, 125); border-top-width: 5px; border-top-style: solid;
+}
+#bottom-left {
+	background: rgb(172, 214, 212); margin: 0px -370px 0px 0px; padding: 10px 15px 10px 20px; width: 365px; float: left; z-index: 15;
+}
+#bottom-right {
+	background: url("../images/bar-shaded-right.jpg") repeat-y white; margin: 0px -45px 0px 370px; padding: 10px 15px; width: 767px; float: left; z-index: 15;
+}
+#bottom-right hr {
+	background: rgb(0, 143, 125); margin: 0px -18px 0px -16px; height: 5px; color: rgb(0, 143, 125);
+}
+.BRhorizontalbar {
+	border-width: 0px; margin: 0px -18px 10px -15px; height: 5px; color: rgb(0, 143, 125); background-color: rgb(0, 143, 125);
+}
+.textcontent h2 {
+	margin: 0px; color: rgb(0, 143, 125); font-family: Arial, sans-serif;
+}
+.links {
+	margin: auto;
+}
+.links td {
+	padding: 0px 10px; text-align: center;
+}
+.links p {
+	padding: 0px 10px; text-align: center;
+}
+.pagetable {
+	text-align: center;
+}
+.pagetable h1 {
+	margin: 0px; padding: 15px; color: azure;
+}
+.plaintext h1 {
+	margin: 0px; padding: 15px; color: azure;
+}
+.pageHeader h1 {
+	color: azure;
+}
+.pageHeader h2 {
+	color: azure;
+}
+.pageHeader h3 {
+	color: azure;
+}
+.pagetable table {
+	margin: auto; XXbackground: azure;
+}
+.pagetable th {
+	color: black; letter-spacing: 2px; padding-bottom: 10px; text-decoration: underline;
+}
+.pagetable dl {
+	background: azure; padding: 20px; left: 250px; width: 650px; text-align: left; color: black; position: relative;
+}
+.pagetable dt {
+	letter-spacing: 2px; font-weight: bold;
+}
+.pagetable a:hover {
+	color: red;
+}
+.plaintext {
+	margin: 0px 200px;
+}
+.agendatable td {
+	color: black; border-bottom-color: teal; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.pagetable td {
+	color: black; border-bottom-color: teal; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.agendatable a {
+	color: black; text-decoration: none;
+}
+.agendatable a:hover {
+	background: teal; color: white;
+}
+.boxes a {
+	background: azure; margin: 100px 20px; border: 20px solid azure; border-image: none;
+}
+.boxes a:hover {
+	background: teal; color: white;
+}
+#hideme {
+	margin: 0px; font-size: 0px;
+}
+#white {
+	background: white;
+}
+#shaded {
+	background: rgb(172, 214, 212);
+}
+.linkblack {
+	color: black; text-decoration: underline;
+}
+.linkwhite {
+	color: white; text-decoration: underline;
+}
+.offsetLeft {
+	margin: 5px 10px 5px -80px; border: 5px solid white; border-image: none; float: left; position: relative; z-index: 5;
+}
+#acro dt {
+	padding-top: 20px;
+}
+.FAQ dt {
+	padding-top: 20px; padding-bottom: 5px;
+}
+.footer {
+	margin: 20px 0px 0px -62px; text-align: center; clear: both; position: relative; z-index: 25;
+}
+.footer ul {
+	margin: 0px; text-align: center;
+}
+.footer li {
+	list-style: none; margin: 0px; padding: 0px 10px; font-size: 18px; display: inline;
+}
+#withbar {
+	border-right-color: black; border-right-width: 2px; border-right-style: solid;
+}
+.footer a:hover {
+	background: teal; color: white;
+}
+.footer a {
+	margin: 0px; color: rgb(118, 118, 118); text-decoration: none; z-index: 20;
+}
+.footerHOME {
+	margin: 0px; text-align: center; bottom: 20px; position: relative;
+}
+.footerHOME ul {
+	margin: 0px; text-align: center;
+}
+.footerHOME li {
+	list-style: none; margin: 0px; padding: 0px 10px; font-size: 18px; display: inline;
+}
+.footerHOME li:hover {
+	background: teal;
+}
+.footerHOME a {
+	margin: 0px; color: white; text-decoration: none;
+}
+#centered {
+	text-align: center;
+}
