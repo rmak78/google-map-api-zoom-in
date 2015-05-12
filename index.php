@@ -18,8 +18,15 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>	
+<script>
+$(document).ready(function() {
+  $(".js-example-basic-single").select2();
+});
+</script>
 <link rel="STYLESHEET" type="text/css" href="css/lwr.css">
 <script type="text/javascript" src="js/lwr.js"></script>
+<link href="dist/css/select2.min.css" rel="stylesheet" />
+<script src="dist/js/select2.min.js"></script>
 <style>
  
    #map-canvas {
@@ -132,7 +139,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <div class="pagecontent">
 	 
-	<div> <h3>put select box here</h3></div>
+	<div> 
+		<h3>
+			<select class="js-example-basic-single">
+					<option value="27.4291111,-82.4298611">Knoll</option>
+					<option value="27.428545,-82.426422,17">Pines</option>
+			</select>
+		</h3>
+	</div>
 	
 	 <div id="map-canvas"></div>
  
