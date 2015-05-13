@@ -2,30 +2,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>LWR Clubs and Organizations</title>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<title>LWR Clubs and Organizations</title><script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+
+
 <link rel="STYLESHEET" type="text/css" href="css/lwr.css">
-<script type="text/javascript" src="js/lwr.js"></script>
 <link href="dist/css/select2.min.css" rel="stylesheet" />
 <link href="dist/css/select2.css" rel="stylesheet" />
-<script src="dist/js/select2.min.js"></script>
 <script>
 var map;
-function initialize(userlat-lng) {
-  
+function initialize() {
+  var userlat = 27.429098;
+  var userlong = -82.429858;
   var mapOptions = {
-    center: new google.maps.LatLng(userlat-lng),
+    center: new google.maps.LatLng(userlat,userlong),
     zoom: 18,
     mapTypeId: google.maps.MapTypeId.SATELLITE
   };
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   map.setTilt(45);
 }
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="dist/js/select2.min.js"></script>
 
-
-//google.maps.event.addDomListener(window, 'load', initialize);
-</script>	
+<script type="text/javascript" src="js/lwr.js"></script>	
 <script>
 $(document).ready(function() {
   $(".js-example-basic-single").select2();
@@ -237,9 +238,9 @@ $(document).ready(function() {
 $("#select_neighbour").change(function() {
            $("#select_neighbour").change(function() {
             ///alert($('option:selected', $(this)).val());
-			var userlat-lng  =$('option:selected', $(this)).val()
+			 var userlatlong  = $('option:selected', $(this)).val();
 			//alert(value);
-google.maps.event.addDomListener(window, 'load', initialize(userlat-lng));
+google.maps.event.addDomListener(window, 'load', initialize(userlatlong));
         });
 });
 </script>
