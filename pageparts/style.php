@@ -1,10 +1,8 @@
 ﻿<style>
  
    #map-canvas {
-        height: 400px;
-        margin: 100px;
-        padding: 50px
+        height: 500px;
+        margin: 20px 0px;
       }
- 
-
+  
 </style>
