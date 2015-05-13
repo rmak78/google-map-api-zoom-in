@@ -5,8 +5,8 @@ function initialize() {
   var userlong = -82.429858;
   var mapOptions = {
     center: new google.maps.LatLng(userlat,userlong),
-    zoom: 18,
-    mapTypeId: google.maps.MapTypeId.SATELLITE
+    zoom: 17,
+    mapTypeId: google.maps.MapTypeId.HYBRID
   };
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   map.setTilt(45);
