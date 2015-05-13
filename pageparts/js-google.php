@@ -9,7 +9,13 @@ function initialize() {
     mapTypeId: google.maps.MapTypeId.SATELLITE
   };
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-  map.setTilt(45);
-}
+  //map.setTilt(45);
+  var marker = new google.maps.Marker({
+    position: userlat,userlong,
+    title:"Hello World!"
+	});
+	marker.setMap(map);
+	
+	}
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
