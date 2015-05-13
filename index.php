@@ -1,14 +1,21 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>LWR Clubs and Organizations</title>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="STYLESHEET" type="text/css" href="css/lwr.css">
+<script type="text/javascript" src="js/lwr.js"></script>
+<link href="dist/css/select2.min.css" rel="stylesheet" />
+<link href="dist/css/select2.css" rel="stylesheet" />
+<script src="dist/js/select2.min.js"></script>
 <script>
 var map;
-
-function initialize() {
+function initialize(value) {
+  
   var mapOptions = {
-    center: new google.maps.LatLng(27.429098, -82.429858),
+    center: new google.maps.LatLng(value),
     zoom: 18,
     mapTypeId: google.maps.MapTypeId.SATELLITE
   };
@@ -16,17 +23,14 @@ function initialize() {
   map.setTilt(45);
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+
+//google.maps.event.addDomListener(window, 'load', initialize);
 </script>	
 <script>
 $(document).ready(function() {
   $(".js-example-basic-single").select2();
 });
 </script>
-<link rel="STYLESHEET" type="text/css" href="css/lwr.css">
-<script type="text/javascript" src="js/lwr.js"></script>
-<link href="dist/css/select2.min.css" rel="stylesheet" />
-<script src="dist/js/select2.min.js"></script>
 <style>
  
    #map-canvas {
@@ -141,10 +145,29 @@ $(document).ready(function() {
 	 
 	<div> 
 		<h3>
-			<select class="js-example-basic-single">
-					<option value="27.4291111,-82.4298611">Knoll</option>
-					<option value="27.428545,-82.426422,17">Pines</option>
-			</select>
+			<p>
+				<select  id="abc" name="select"  class="js-example-basic-single select">
+						<option value="27.429098,-82.429858">Knoll</option>
+						<option value="27.428545,-82.426422">Pines</option>
+						<option value="	27.429611,-82.422620">Glen</option>
+						<option value="27.428716,-82.419680">Crest</option>
+						<option value="27.430272,-82.415583">Strand	</option>
+						<option value="27.426653,-82.409745">Trails	</option>
+						<option value="27.422728,-82.406354">Vistas	</option>
+						<option value="27.428367,-82.408286">Gardens	</option>
+	</select>
+<script>
+$("#abc").change(function() {
+           $("#abc").change(function() {
+            ///alert($('option:selected', $(this)).val());
+			var value  =$('option:selected', $(this)).val()
+			//alert(value);
+google.maps.event.addDomListener(window, 'load', initialize(value));
+        });
+});
+</script>
+      </p>
+
 		</h3>
 	</div>
 	
