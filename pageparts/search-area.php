@@ -3,7 +3,8 @@
 </div>
 <div id="select-box"><label for="mapselect">Select a Neighbourhood: </label>
 <select  id="mapselect" name="mapselect"  class="js-example-basic-single" style="width:250px" >
-							<option value='27.4116934, -82.4285267,13' >Lakewood Ranch</option>
+
+<option selected="selected" value='27.4116934, -82.4285267,13' >Lakewood Ranch</option>
 <option value='27.398652, -82.402687' >Ashland</option>
 <option value='27.398735, -82.422555' >Augusta</option>
 <option value='27.425159, -82.388148' >Banks</option>

@@ -1,7 +1,7 @@
 ﻿<script>
 
 var locations = [
-['Lakewood Ranch', 27.4116934, -82.4285267 , 1 , 'This is Lakewood Ranch' ] ,
+['Lakewood Ranch', 27.4087468, -82.4133144 , 1 , 'This is Lakewood Ranch' ] ,
 ['Ashland', 27.398652, -82.402687 , 2 , 'This is Ashland' ] ,
 ['Augusta', 27.398735, -82.422555 , 3 , 'This is Augusta' ] ,
 ['Banks', 27.425159, -82.388148 , 4 , 'This is Banks' ] ,
@@ -91,12 +91,12 @@ var locations = [
 ];
 var map;
 function initialize() {
-  var userlat = 27.4116934 ;
-  var userlong = -82.4285267;
+  var userlat = 27.4087468;
+  var userlong =   -82.4133144 ;
   
 var mapOptions = {
     center: new google.maps.LatLng(userlat,userlong),
-    zoom: 14,
+    zoom: 13,
     mapTypeId: google.maps.MapTypeId.HYBRID
   };
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
