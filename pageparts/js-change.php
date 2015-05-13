@@ -10,6 +10,7 @@ $("#select_neighbour").change(function() {
 
 			//marker.setPosition(newLatLng);
 			map.setCenter(newLatLng)
-			 
+		    marker.setMap(null);
+			marker.setMap(map);
 });
 </script>

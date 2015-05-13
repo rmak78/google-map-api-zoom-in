@@ -11,11 +11,12 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   //map.setTilt(45);
   var marker = new google.maps.Marker({
-    position: userlat,userlong,
+    position: mapOptions['center'],
     title:"Hello World!"
 	});
 	marker.setMap(map);
+}
+ 
 	
-	}
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
