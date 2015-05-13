@@ -1,4 +1,4 @@
-﻿<select  id="select_neighbour" name="select_neighbour"  class="js-example-basic-single select" style="width:500px; height:100px;">
+﻿<select  id="select_neighbour" name="select_neighbour"  class="js-example-basic-single select" style="width:500px; margin-top:200px">
 							<option value='27.429098,-82.429858'> Knoll </option>
 							<option value='27.428545,-82.426422' > Pines </option>
 							<option value='27.429611,-82.422620' > Glen </option>
