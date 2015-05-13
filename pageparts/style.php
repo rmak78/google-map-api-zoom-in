@@ -18,7 +18,7 @@
 	font-weight: bold;
 }
 #map-canvas {
-        height: 500px;
+        height: 600px;
          
       }
   
