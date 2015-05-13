@@ -144,9 +144,8 @@ $(document).ready(function() {
 
 <div class="pagecontent">
 	 
-	<div style="margin-left:100px; margin-top:100px;"> 
-		<h3>
-			<p>
+	<div class="pagetable"> 
+		
 				<select  id="select_neighbour" name="select_neighbour"  class="js-example-basic-single select" style="width:500px; height:100px;">
 							<option value='27.429098,-82.429858'> Knoll </option>
 							<option value='27.428545,-82.426422' > Pines </option>
@@ -249,9 +248,9 @@ $("#select_neighbour").change(function() {
 			 
 });
 </script>
-      </p>
+      
 
-		</h3>
+		
 	</div>
 	
 	 <div id="map-canvas"></div>
