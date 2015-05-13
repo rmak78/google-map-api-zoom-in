@@ -1,5 +1,5 @@
 ﻿<script>
-$("#select_neighbour").change(function() {
+$("#mapselect").change(function() {
            
             ///alert($('option:selected', $(this)).val());
 			 var userlatlong  = $('option:selected', $(this)).val();
