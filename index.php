@@ -8,6 +8,7 @@
 <div class="row search-area"> 		
 <?php include_once('pageparts/search-area.php'); ?>
 </div>
+<div style="clear:both";></div>
 <div id="map-canvas" class="row search-area" ></div>
 <?php include_once('pageparts/js-change.php'); ?>
 </div> 
