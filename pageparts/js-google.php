@@ -1,11 +1,11 @@
 ﻿<script>
 var map;
 function initialize() {
-  var userlat = 27.429098;
-  var userlong = -82.429858;
+  var userlat = 27.4116934 ;
+  var userlong = -82.4285267;
   var mapOptions = {
     center: new google.maps.LatLng(userlat,userlong),
-    zoom: 17,
+    zoom: 14,
     mapTypeId: google.maps.MapTypeId.HYBRID
   };
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
